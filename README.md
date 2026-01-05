@@ -2,25 +2,54 @@
 
 This repository contains the source code for **worldformat.org**.
 
-The site presents the definition, rationale, and examples of **World Format** in a readable, navigable form.  
-It is built with Astro and is intended as a public reference and entry point.
+The site hosts the definition, rationale, and examples of **World Format** in a readable,
+navigable form. It is built with Astro and serves as the primary public reference
+for the format.
 
-## Related Repositories
+## Role of this Repository
 
-- **worldformat-spec**  
-  The canonical definition of World Format.  
-  This is the normative source of the specification.
+This repository is the **authoritative home of the World Format specification**.
+
+It contains:
+- the current definition document
+- explanatory text and examples
+- contextual material describing design intent and non-goals
+
+Changes to the format are proposed, discussed, and reflected here.
 
 ## Scope
 
 This repository focuses on:
-- documentation presentation
-- site structure and navigation
-- publishing the specification to the web
+- the World Format definition text
+- documentation structure and presentation
+- publishing and maintaining the specification on the web
 
-It does **not** define the format itself.
+It does not provide:
+- reference implementations
+- storage backends
+- tooling or runtime behavior
+
+Those belong to other projects.
+
+## Related Projects
+
+- **[worldformat-spec](https://github.com/worldformat/worldformat-spec)**  
+  An entry-point repository providing an overview of World Format and links to this site.
+
+- **[worldstore](https://github.com/worldformat/worldstore)**  
+  A reference implementation and host for World files.
 
 ## Status
 
-The content and structure of the site may evolve.  
-For the authoritative specification, always refer to `worldformat-spec`.
+World Format is a living document.
+
+The content and structure of this site may evolve as the format is refined,
+clarified, or extended through discussion and use.
+
+## License
+
+The World Format documentation is licensed under  
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+You are free to use, share, and adapt the material,  
+provided that proper attribution is given.

@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+const { url } = Astro;
+const isTop = url.pathname === "/";
+---
+
+<html class="dark">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>{frontmatter.title ?? "World Format"}</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-zinc-50 dark:bg-zinc-900">
+    <div class="
+      prose prose-zinc max-w-2xl dark:prose-invert my-10 md:my-14 lg:my-16 px-4 mx-auto
+      prose-h1:text-3xl prose-h1:font-bold
+      prose-h2:text-2xl prose-h2:font-bold
+      prose-h3:text-xl prose-h3:font-semibold
+    ">
+      <main>
+        <slot />
+      </main>
+			{!isTop && (
+				<hr />
+				<footer>
+					{!isTop && <a href="/">&larr; Back to World Format</a>}
+				</footer>
+			)}
+    </div>
+  </body>
+</html>

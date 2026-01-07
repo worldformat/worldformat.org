@@ -1,7 +1,7 @@
 ---
 title: World Format — Definition Document
-version: 1.1
-date: '2026-01-03'
+version: 1.2
+date: '2026-01-07'
 layout: ../layouts/Layout.astro
 ---
 # World Format
@@ -151,7 +151,7 @@ name = "Subtask 2"
 Important:
 - `[task/sub]` is an absolute path
 - It does **not** inherit meaning from the most recently declared `[task]`
-- This behavior intentionally differs from TOML
+- If a parent path resolves to an array, it cannot be used as an intermediate node and is considered invalid
 
 ---
 

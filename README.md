@@ -33,8 +33,8 @@ Those belong to other projects.
 
 ## Related Projects
 
-- **[worldformat-spec](https://github.com/worldformat/worldformat-spec)**  
-  An entry-point repository providing an overview of World Format and links to this site.
+- **[worldformat](https://github.com/worldformat/worldformat)**  
+  The reference implementation of the World Format parser and related utilities.
 
 - **[worldstore](https://github.com/worldformat/worldstore)**  
   A reference implementation and host for World files.
